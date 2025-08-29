@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# Studyflash Hiring Challenge: Starting Point
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Intro
 
-## Get started
+Welcome! Use this repo as the starting point for your submission to the **Studyflash** mobile developer hiring challenge. You’ll build a simple streaming AI chatbot that mimics the look and feel of **ChatGPT**
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Getting started
 
-2. Start the app
+* **pnpm** installed
+* Gemini API key (provided as part of the challenge)
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Create `.env.local` in the project root:
 
 ```bash
-npm run reset-project
+GOOGLE_GENERATIVE_AI_API_KEY=provided_key_here
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Running in Expo 
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Install deps:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   ```bash
+   pnpm install
+   ```
+2. Start the dev server:
 
-## Join the community
+   ```bash
+   pnpm expo
+   ```
+3. Open the app:
 
-Join our community of developers creating universal apps.
+   * **iOS Simulator:** press `i` in the terminal.
+   * **Real device:** install **Expo Go**, scan the QR code.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+---
+
+## Core commands
+
+```bash
+# install
+pnpm install
+
+# start (Expo Go)
+pnpm expo
+
+# clear cache (if needed)
+pnpm expo start -c
+```
+
+---
+
+## Key files to work on
+
+* **Primary (chat UI):** `app/(tabs)/index.tsx`
+  *This is the main file to implement your chat experience.*
+* **API route (streaming/tools example):** `app/api/chat+api.ts`
+---
+
+## Development build (optional)
+
+If you need more than Expo Go (e.g., native modules or a custom dev client):
+
+* Use the prepared branch:
+
+  ```bash
+  git checkout native-development-build
+  ```
+* Or create your own dev client:
+
+  ```bash
+  pnpm expo run:ios  
+  pnpm expo start 
+  ```
+
