@@ -46,10 +46,10 @@ GOOGLE_GENERATIVE_AI_API_KEY=provided_key_here
 pnpm install
 
 # start (Expo Go)
-pnpm expo
+npx expo
 
 # clear cache (if needed)
-pnpm expo start -c
+npx expo start -c
 ```
 
 ---
