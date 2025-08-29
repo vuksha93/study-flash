@@ -29,28 +29,13 @@ GOOGLE_GENERATIVE_AI_API_KEY=provided_key_here
 2. Start the dev server:
 
    ```bash
-   pnpm expo
+   npx expo
    ```
 3. Open the app:
 
    * **iOS Simulator:** press `i` in the terminal.
    * **Real device:** install **Expo Go**, scan the QR code.
 
-
----
-
-## Core commands
-
-```bash
-# install
-pnpm install
-
-# start (Expo Go)
-npx expo
-
-# clear cache (if needed)
-npx expo start -c
-```
 
 ---
 
