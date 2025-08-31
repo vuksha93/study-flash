@@ -2,6 +2,7 @@ import Constants from "expo-constants";
 
 export const generateAPIUrl = (relativePath: string) => {
   let origin: string;
+
   if (!Constants.experienceUrl) {
     origin = "http://localhost:8081";
   } else {
